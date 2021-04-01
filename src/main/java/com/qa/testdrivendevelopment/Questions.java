@@ -1,5 +1,7 @@
 package com.qa.testdrivendevelopment;
 
+import java.util.Locale;
+
 public class Questions {
 
 	/**
@@ -92,7 +94,7 @@ public class Questions {
 	 * endsJava("pythoniscool") → false <br>
 	 */
 	public boolean endsJava(String input) {
-    	return false;
+    	return input.toLowerCase(Locale.ENGLISH).endsWith("java");
 	}
 
 	/**

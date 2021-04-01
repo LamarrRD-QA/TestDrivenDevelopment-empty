@@ -76,7 +76,9 @@ public class Questions {
 	 * nMid("Chocolate", 1) → "Choclate"<br>
 	 */
 	public String nMid(String input, int n) {
-    	return "";
+		int amountToKeep = input.length() - n;
+
+		return input.substring(0, amountToKeep / 2) + input.substring((amountToKeep / 2) + n);
 	}
 
 	/**

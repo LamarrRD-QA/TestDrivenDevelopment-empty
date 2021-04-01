@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f740b0-6796-4e06-a036-8e982a3381ac" name="Default Changelist" comment="" />
+    <list default="true" id="42f740b0-6796-4e06-a036-8e982a3381ac" name="Default Changelist" comment="LRD: Completed nMid challenge;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/testdrivendevelopment/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/testdrivendevelopment/Questions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/testdrivendevelopment/Questions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qa/testdrivendevelopment/Questions.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qZYdYEHf9YH19DeZC0xokbmz3S" />
@@ -21,9 +30,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.QuestionTest.nMidTest">
     <configuration name="QuestionTest.multiCharTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdrivendevelopment" />
       <extension name="coverage">
@@ -40,8 +50,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuestionTest.nMidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdrivendevelopment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.testdrivendevelopment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.testdrivendevelopment" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.testdrivendevelopment.QuestionTest" />
+      <option name="METHOD_NAME" value="nMidTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestionTest.nMidTest" />
         <item itemvalue="JUnit.QuestionTest.multiCharTest" />
       </list>
     </recent_temporary>
@@ -67,5 +94,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LRD: Completed nMid challenge;" />
+    <option name="LAST_COMMIT_MESSAGE" value="LRD: Completed nMid challenge;" />
   </component>
 </project>

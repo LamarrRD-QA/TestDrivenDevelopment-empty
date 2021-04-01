@@ -28,7 +28,13 @@ public class Questions {
 	 * multChar("Hi-There") → "HHHiii---TTThhheeerrreee"
 	 */
 	public String multiChar(String input) {
-		return "";
+		StringBuilder builder = new StringBuilder();
+		for(char i : input.toCharArray()) {
+			for (int j = 1; j <= 3; j++) {
+				builder.append(i);
+			}
+		}
+		return builder.toString();
 	}
 
 	/**

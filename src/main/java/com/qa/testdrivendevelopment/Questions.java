@@ -1,5 +1,8 @@
 package com.qa.testdrivendevelopment;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+
 public class Questions {
 
 	/**
@@ -61,7 +64,15 @@ public class Questions {
 	 * evenlySpaced(4, 60, 9) → false
 	 */
 	public boolean evenlySpaced(int a, int b, int c) {
-		return false;
+		ArrayList<Integer> numbers = new ArrayList<>();
+
+		numbers.add(a);
+		numbers.add(b);
+		numbers.add(c);
+
+		numbers.sort(Comparator.naturalOrder());
+
+		return (numbers.get(2) - numbers.get(1) == numbers.get(1) - numbers.get(0));
 	}
 
 	/**

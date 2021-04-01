@@ -1,5 +1,8 @@
 package com.qa.testdrivendevelopment;
 
+import java.util.ArrayList;
+import java.util.Locale;
+
 public class Questions {
 
 	/**
@@ -45,7 +48,26 @@ public class Questions {
 	 */
 
 	public String sandwichFilling(String sandwich) {
-		return "";
+		String better_sandwich = sandwich.toLowerCase(Locale.ENGLISH);
+		ArrayList<Integer> indices = new ArrayList<>();
+		int currentIndex = 0;
+
+		while (currentIndex <= better_sandwich.length()) {
+			currentIndex = better_sandwich.indexOf("bread", currentIndex);
+			if (currentIndex == -1) {
+				break;
+			}
+			indices.add(currentIndex);
+			currentIndex += 5;
+		}
+
+		if (indices.size() == 2) {
+			StringBuilder madString = new StringBuilder();
+			madString.append(better_sandwich, indices.get(0) + 5, indices.get(1));
+			return madString.reverse().toString();
+		} else {
+			return "";
+		}
 	}
 
 	/**

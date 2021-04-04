@@ -107,7 +107,29 @@ public class Questions {
 	 * HINT: "a" == "a" if false HINT: "a".equals("a") is true
 	 */
 	public int superBlock(String input) {
-    	return -1;
+		if (input.isEmpty()) {
+			return 0;
+		}
+
+		char[] inputArray = input.toCharArray();
+		int count = 1;
+		int largestRun = 0;
+
+		for (int i = 0; i < inputArray.length - 1; i++) {
+			if (inputArray[i] == inputArray[i+1]) {
+				count += 1;
+				if (i == inputArray.length - 2 && largestRun < count) {
+					largestRun = count;
+				}
+			} else {
+				if (largestRun < count) {
+					largestRun = count;
+				}
+				count = 1;
+			}
+		}
+
+		return largestRun;
 	}
 
 	/**

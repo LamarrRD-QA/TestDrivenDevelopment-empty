@@ -1,5 +1,7 @@
 package com.qa.testdrivendevelopment;
 
+import java.util.ArrayList;
+
 public class Questions {
 
 	/**
@@ -162,7 +164,28 @@ public class Questions {
 	 */
 
 	public int largest(String input) {
-    	return -1;
+		String[] strings = input.split(" ");
+		ArrayList<Integer> listOfTotals = new ArrayList<>();
+		
+		for (String i : strings) {
+			int total = 0;
+
+			for (char c:  i.toCharArray()) {
+				total += Character.getNumericValue(c);
+			}
+			
+			listOfTotals.add(total);
+		}
+
+		int max = listOfTotals.get(0);
+
+		for (int i = 1; i < listOfTotals.size(); i++) {
+			if (listOfTotals.get(i) > max) {
+				max = listOfTotals.get(i);
+			}
+		}
+
+		return max;
 	}
 
 	/**

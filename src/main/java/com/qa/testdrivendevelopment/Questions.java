@@ -1,5 +1,8 @@
 package com.qa.testdrivendevelopment;
 
+import java.util.Arrays;
+import java.util.Locale;
+
 public class Questions {
 
 	/**
@@ -123,7 +126,16 @@ public class Questions {
 	 * HINT: String.toLowerCase
 	 */
 	public int amISearch(String sentence) {
-    	return -1;
+		int count = 0;
+		String[] splitStrings = sentence.toLowerCase(Locale.ENGLISH).split(" ");
+
+		for (String i : splitStrings) {
+			if (i.equals("am")) {
+				count += 1;
+			}
+		}
+
+		return count;
 	}
 
 	/**

@@ -179,6 +179,6 @@ public class Questions {
 	 * HINT: String.charAt
 	 */
 	public boolean compares(String word, int index, char letter) {
-    	return false;
+		return index - 1 < word.length() && word.charAt(index - 1) == letter;
 	}
 }
